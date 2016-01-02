@@ -76,7 +76,7 @@ syn keyword enLetters b c d e f g h j k l m n p q r s t u v w x y z
 let b:current_syntax = "en"
 
 hi def link enContractions Type
-hi def link enObscure Error
+" hi def link enObscure Error
 hi def link enPronounsPersonal PreProc
 hi def link enPronounsImpersonal PreProc
 hi def link enPronounsOther PreProc

@@ -8,7 +8,7 @@ syn match deEinPronouns "\<\([mdsk]\?ein\|ihr\|unse\?r\|eue\?r\)\(e[rsnm]\?\)\?\
 syn match dePronounsImpersonal "\<\(irgend\)\?\(jemand\(e[rsnm]\?\)\?\|etwas\|wo\(her\|hin\)\?\|wie\)\>" " etwas, irgendwohin, etc.
 syn match dePronounsImpersonal "\<nirgends\?\(wo\(her\|hin\)\?\)\?\>"
 syn match dePronounsImpersonal "\<niemand\(e[rsnm]\)\?\>"
-syn match dePronounsImpersonal "\<\(all\|jed\|manch\)\(e[rsnm]\?\)\?\>"
+syn match dePronounsImpersonal "\<\(all\|je[dn]\|manch\|irgendein\)\(e[rsnm]\?\)\?\>"
 syn keyword dePronounsImpersonal nichts man
 syn match dePronounsOther "\<\(der\|die\|das\|den\|dem\|des\)selben\?\>" " derselbe, dasselbe, usw.
 syn match dePronounsOther "\<dies\(e[rnsm]\?\)\?\>" " diese, dieser, diesen, usw.
@@ -54,7 +54,7 @@ syn match deDaWoCompounds "\<\(statt\|während\)[dw]essen\>"
 syn match deDaWoCompounds "\<\(außer\|ausser\|trotz\)\?[dw]em\>"
 syn match deHinHerCompounds "\<\(ab\|an\|auf\|aus\|bei\|durch\|gegen\|h\?in\|hier\|her\|mit\|nach\|neben\|seit\|statt\|über\|um\|unter\|von\|vor\|zu\|zwischen\)\{2,\}\>" " 'gegenüber' matches the reg-ex.
 syn keyword deHinHerCompounds ran rauf raus rüber rum runter
-syn keyword dePrepositions ab an am ans auf aufs aus außer außerhalb ausser ausserhalb bei beim durch durchs entlang entgegen entsprechend
+syn keyword dePrepositions ab an am ans auf aufs aus außer außerhalb ausser ausserhalb bei beim bezüglich durch durchs entlang entgegen entsprechend
 syn keyword dePrepositions für fürs gegen gegens hinter hinterm hintern in im ins innerhalb mit nach namens neben nebst ohne pro
 syn keyword dePrepositions seit statt trotz über überm übers um ums unter unters von vom vor während weder wegen zu zur zum zwischen
 
