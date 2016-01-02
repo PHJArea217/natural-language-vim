@@ -1,0 +1,10 @@
+This is a test of the so-called "English" syntax
+highlighting feature. I have an idea myself and
+it could also be good for everyone. It isn't the
+best idea, but it could be useful for people whose
+first language isn't English. Notice how some of the
+words that are common words in English are highlighted
+and the less-common words aren't. That's really
+cool! I've actually written a lot of programs in my
+miniutils repository.
+

@@ -3,7 +3,7 @@
 
 syntax case ignore
 
-syn keyword enPronounsPersonal i you he she it we they me him her us them my your his its our their myself yourself himself herself itself ourselves yourselves themselves mine yours hers ours theirs
+syn keyword enPronounsPersonal i you he she it we they me him her us them my your his its our their myself yourself himself herself itself ourselves yourselves themselves mine yours hers ours theirs thou thy
 syn match enPronounsImpersonal "\<\(some\|no\|any\|every\)\(body\|where\|one\|thing\)\?\>"
 syn keyword enPronounsImpersonal all none one
 syn keyword enPronounsOther this these those here there
@@ -26,7 +26,7 @@ syn keyword enInterjections please oh eh
 syn match enModals "\<\(could\|would\|should\)\(n't\)\?\>"
 syn keyword enModals must may can cannot will shall might able unable
 syn match enModals "\<\(can't\|won't\)\>"
-syn keyword enQuestionWords what who where when which how why
+syn keyword enQuestionWords what who whom whose where when which how why
 
 syn keyword enPrepositions about above across after agains along among around as at away before behind below beneath beside besides between beyond by circa despite down during except for from inside into like near of off on onto out outside over per since than through to toward towards under underneath unlike until up upon versus vs vs. via with within without
 
@@ -44,7 +44,7 @@ syn match enConjunctionsSubordB "\<\(such as\)\>"
 syn keyword enOthers a an the not then
 
 syn keyword enCommonWords too just only still again else already first next last now always never also rather
-syn keyword enCommonWords least much very sometimes etc well anymore really once twice apart
+syn keyword enCommonWords least much very sometimes etc well anymore really once twice apart especially
 syn match enCommonWords "\<let's\>"
 
 syn match enObscure "\<\(ain't\|mustn't\)\>"
@@ -57,7 +57,7 @@ syn keyword enNumbers two three four five six seven eight nine ten eleven twelve
 syn match enNumbers "\<\(twenty\|thirty\|fourty\|forty\|fifty\|sixty\|seventy\|eighty\|ninety\)\([- ]\(one\|two\|three\|four\|five\|six\|seven\|eight\|nine\)\)\?\>"
 syn match enNumbers "\<[0-9]\+\.\?\>" " Integers
 syn match enNumbers "\<[0-9]*\.[0-9]\+\>" " Decimals
-syn match enNumbersOrdinal "\<[0-9]*\(st\|nd\|rd\|th\)\>"
+syn match enNumbersOrdinal "\<[0-9]\+\(st\|nd\|rd\|th\)\>"
 syn keyword enNumbersOrdinal first second third fourth fifth sixth seventh eighth ninth tenth eleventh twelfth thirteenth fourteenth fifteenth sixteenth seventeenth eighteenth nineteenth twentith thirtith fourtith fiftith sixtith seventith eightith ninetith hundredth thousandth millionth billionth trillionth half quarter
 
 

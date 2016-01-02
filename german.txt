@@ -1,0 +1,9 @@
+Dies ist eine Ausprobierung von der sogenannt "Deutsch"-
+Syntaxhervorhebenszug. Ich habe eine Idee von mir selber
+und es konnte auch für jeden gut sein. Sie ist nicht die
+beste Idee, aber es konnte auch für Leute nutzlich, deren
+erste Sprache nicht Deutsch ist. Merke, dass manche Wörter,
+die allgemeine Wörter sind, wurden hervorgehoben und die
+nicht-allgemeine Wörter nicht so. Das ist wirklich cool!
+Ich habe eigentlich viele Programme in meinem miniutils-
+Repository geschrieben.

@@ -6,22 +6,22 @@ syntax case ignore
 syn keyword dePronounsPersonal ich du er sie es wir ihr mich dich ihn uns euch mir dir ihm ihnen sich selbst selber
 syn match deEinPronouns "\<\([mdsk]\?ein\|ihr\|unse\?r\|eue\?r\)\(e[rsnm]\?\)\?\>"
 syn match dePronounsImpersonal "\<\(irgend\)\?\(jemand\(e[rsnm]\?\)\?\|etwas\|wo\(her\|hin\)\?\|wie\)\>" " etwas, irgendwohin, etc.
-syn match dePronounsImpersonal "\<nirgendwo\(her\|hin\)\?\>"
+syn match dePronounsImpersonal "\<nirgends\?\(wo\(her\|hin\)\?\)\?\>"
 syn match dePronounsImpersonal "\<niemand\(e[rsnm]\)\?\>"
 syn match dePronounsImpersonal "\<\(all\|jed\|manch\)\(e[rsnm]\?\)\?\>"
 syn keyword dePronounsImpersonal nichts man
 syn match dePronounsOther "\<\(der\|die\|das\|den\|dem\|des\)selben\?\>" " derselbe, dasselbe, usw.
 syn match dePronounsOther "\<dies\(e[rnsm]\?\)\?\>" " diese, dieser, diesen, usw.
 syn match dePronounsOther "\<\(da\|dort\|hier\)\(her\|hin\)\?\>"
-syn keyword dePronounsOther her hin
+syn keyword dePronounsOther her hin allerdings
 syn match dePronounsOther "\<\(ab\|an\|auf\|aus\|bei\|durch\|gegen\|mit\|nach\|neben\|über\|um\|unter\|vor\|zwischen\)\?einander\>"
 
 syn keyword deNounsAdjectivesOther mal anders bisschen paar oben unten
-syn match deNounsAdjectivesOther "\<\(lang\|ander\|nächst\)\(e[rsnm]\?\)\?\>"
+syn match deNounsAdjectivesOther "\<\(lang\|ander\|nächst\|selb\)\(e[rsnm]\?\)\?\>"
 syn match deNounsAdjectivesOther "\<letzte[rsnm]\?\>"
 syn match deNounsAdjectivesOther "\<jede[rnm]falls\?\>"
 
-syn keyword deKeywordsOther nicht zuerst dann zuletzt als erst tja naja ja nein also usw bzw ggf
+syn keyword deKeywordsOther nicht zuerst dann zuletzt als erst tja naja ja nein also usw bzw ggf je desto etwa
 syn match deKeywordsOther "z\.B\.\|d\.h\."
 
 " 'sein' overlaps deEinPronouns
@@ -40,18 +40,19 @@ syn keyword deConjugationsDurfen dürfen darf darfst dürft gedurft durfte durft
 syn keyword deConjugationsTun tun tut tust tu tue getan tan tat tast täte tätet täten
 
 syn keyword deAdverbsOther mehr meisten immer nie wieder nur noch niemals manchmal nun auch oftmals weiter zuletzt überall jetzt
-syn keyword deAdverbsOther sehr endlich zurück weg gar oft selten schon sonst ansonsten erstmal jedoch
+syn keyword deAdverbsOther sehr endlich zurück weg gar oft selten schon sonst ansonsten erstmal jedoch eben ebenso beinahe sowieso
+syn keyword deAdverbsOther garnicht garnichts
 
 syn match deAdverbsOther "\<\(viel\|ganz\)\(e[rnsm]\?\)\?\>"
 
-syn keyword deQuestionWords wer wen wem wieso warum was wann wie
+syn keyword deQuestionWords wer wen wem wieso warum was wann wie wessen
 syn match deQuestionWords "\<\(irgend\)\?welche[rnsm]\?\>"
-syn match deDaWoCompounds "\<\(da\|wo\)\(hin\|her\)\?\(ran\|r\?auf\|r\?aus\|bei\|durch\|für\|gegen\|hinter\|r\?in\|mit\|nach\|neben\|r\?über\|r\?um\|r\?unter\|von\|vor\|zu\|zwischen\)\>"
-syn keyword deDaWoCompounds dran drauf draus drin drüber drum
+syn match deDaWoCompounds "\<\(da\|[ws]o\)\(hin\|her\)\?\(ran\|r\?auf\|r\?aus\|bei\|durch\|für\|gegen\|hinter\|r\?in\|mit\|nach\|neben\|r\?über\|r\?um\|r\?unter\|von\|vor\|zu\|zwischen\)\>"
+syn keyword deDaWoCompounds dran drauf draus drin drüber drum drunter
 syn match deDaWoCompounds "\<[dw]es\(halb\|wegen\|während\)\>"
-syn match deDaWoCompounds "\<\(statt\|während\)\?[dw]essen\>"
-syn match deDaWoCompounds "\<\(trotz\)\?[dw]em\>"
-syn match deHinHerCompounds "\<\(ab\|an\|auf\|aus\|bei\|durch\|gegen\|h\?in\|her\|mit\|nach\|neben\|seit\|statt\|über\|um\|unter\|von\|vor\|zu\|zwischen\)\{2,\}\>" " 'gegenüber' matches the reg-ex.
+syn match deDaWoCompounds "\<\(statt\|während\)[dw]essen\>"
+syn match deDaWoCompounds "\<\(außer\|ausser\|trotz\)\?[dw]em\>"
+syn match deHinHerCompounds "\<\(ab\|an\|auf\|aus\|bei\|durch\|gegen\|h\?in\|hier\|her\|mit\|nach\|neben\|seit\|statt\|über\|um\|unter\|von\|vor\|zu\|zwischen\)\{2,\}\>" " 'gegenüber' matches the reg-ex.
 syn keyword deHinHerCompounds ran rauf raus rüber rum runter
 syn keyword dePrepositions ab an am ans auf aufs aus außer außerhalb ausser ausserhalb bei beim durch durchs entgegen entsprechend
 syn keyword dePrepositions für fürs gegen gegens hinter hinterm hintern in im ins innerhalb mit nach namens neben nebst ohne pro
@@ -61,16 +62,16 @@ syn keyword deConjunctionsCoord und oder aber denn dennoch entweder doch so
 syn keyword deConjunctionsSubord anstatt bevor bis dass daß hingegen indem inder indessen nachdem ob obgleich obwohl seitdem weil wenn zudem zuder
 syn match deConjunctionsSubord "\<so\(bald\|dass\|daß\|wie\|lange\?\|ndern\|viel\|wohl\|weit\)\>"
 
-syn keyword deDefiniteArticle die das der den dem des denen
+syn keyword deDefiniteArticle die das der den dem des dessen deren denen
 
 syn match deContractions "'[snm]\>"
 
-syn match deNumbers "\<\(eins\|zwei\|drei\|sechs\|sieben\|\(vier\|fünf\|sech\|sieb\|acht\|neun\)\(zehn\|zig\)\?\|zehn\|elf\|zwölf\|dreizehn\|dreißig\|dreissig\|hundert\|und\|tausend\|million\|milliard\|billion\|billiard\|trillion\)\+\(te[rnsm]\?\)\?\>"
+syn match deNumbers "\<\(ein\|zwei\|drei\|sechs\|sieben\|\(vier\|fünf\|sech\|sieb\|acht\|neun\)\(zehn\|zig\)\?\|zehn\|elf\|zwölf\|dreizehn\|dreißig\|dreissig\|hundert\|und\|tausend\|million\|milliard\|billion\|billiard\|trillion\)\+\(te[rnsm]\?\)\?\(mal\)\?\>"
 syn match deNumbers "\<\(ers\|drit\|sech\|sieb\|ach\)te[rnsm]\?\>"
-syn keyword deNumbers null viertel
+syn keyword deNumbers null eins viertel
 syn match deNumbers "\<halb\(e[rnsm]\?\)\?\>"
 syn match deNumbers "[0-9]\+"
-syn match deNumbers "\<\d\+\( Uhr\)\?\>"
+syn match deNumbers "\<\d\+\( \?uhr\)\?\>"
 
 " 'so' overlaps with deConjunctionsCoord
 syn keyword deDaysOfTheWeek montag dienstag mittwoch donnerstag freitag samstag sonntag mo di mi do fr sa
