@@ -22,7 +22,7 @@ syn match deNounsAdjectivesOther "\<letzte[rsnm]\?\>"
 syn match deNounsAdjectivesOther "\<jede[rnm]falls\?\>"
 
 syn keyword deKeywordsOther nicht zuerst dann zuletzt als erst tja naja ja nein also usw bzw ggf je desto etwa
-syn match deKeywordsOther "z\.B\.\|d\.h\."
+syn match deKeywordsOther "z\.B\.\|d\.h\.\|s\.[uo]\."
 
 " 'sein' overlaps deEinPronouns
 syn keyword deConjugationsSein bin bist ist sind seid war warst waren wart gewesen wär wäre wärst wären wärt sei
@@ -41,7 +41,7 @@ syn keyword deConjugationsTun tun tut tust tu tue getan tan tat tast täte täte
 
 syn keyword deAdverbsOther mehr meisten immer nie wieder nur noch niemals manchmal nun auch oftmals weiter zuletzt überall jetzt
 syn keyword deAdverbsOther sehr endlich zurück weg gar oft selten schon sonst ansonsten erstmal jedoch eben ebenso beinahe sowieso
-syn keyword deAdverbsOther garnicht garnichts
+syn keyword deAdverbsOther garnicht garnichts allein eher zwar
 
 syn match deAdverbsOther "\<\(viel\|ganz\)\(e[rnsm]\?\)\?\>"
 
@@ -54,12 +54,12 @@ syn match deDaWoCompounds "\<\(statt\|während\)[dw]essen\>"
 syn match deDaWoCompounds "\<\(außer\|ausser\|trotz\)\?[dw]em\>"
 syn match deHinHerCompounds "\<\(ab\|an\|auf\|aus\|bei\|durch\|gegen\|h\?in\|hier\|her\|mit\|nach\|neben\|seit\|statt\|über\|um\|unter\|von\|vor\|zu\|zwischen\)\{2,\}\>" " 'gegenüber' matches the reg-ex.
 syn keyword deHinHerCompounds ran rauf raus rüber rum runter
-syn keyword dePrepositions ab an am ans auf aufs aus außer außerhalb ausser ausserhalb bei beim durch durchs entgegen entsprechend
+syn keyword dePrepositions ab an am ans auf aufs aus außer außerhalb ausser ausserhalb bei beim durch durchs entlang entgegen entsprechend
 syn keyword dePrepositions für fürs gegen gegens hinter hinterm hintern in im ins innerhalb mit nach namens neben nebst ohne pro
 syn keyword dePrepositions seit statt trotz über überm übers um ums unter unters von vom vor während weder wegen zu zur zum zwischen
 
 syn keyword deConjunctionsCoord und oder aber denn dennoch entweder doch so
-syn keyword deConjunctionsSubord anstatt bevor bis dass daß hingegen indem inder indessen nachdem ob obgleich obwohl seitdem weil wenn zudem zuder
+syn keyword deConjunctionsSubord anstatt bevor bis dass daß falls gleichwohl hingegen indem inder indessen nachdem ob obgleich obwohl seitdem weil wenn zudem zuder
 syn match deConjunctionsSubord "\<so\(bald\|dass\|daß\|wie\|lange\?\|ndern\|viel\|wohl\|weit\)\>"
 
 syn keyword deDefiniteArticle die das der den dem des dessen deren denen
@@ -110,3 +110,4 @@ hi def link deHinHerCompounds Type
 hi def link deNumbers Constant
 hi def link deDaysOfTheWeek Constant
 hi def link deMonthsOfTheYear Constant
+
