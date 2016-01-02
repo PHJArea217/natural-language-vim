@@ -25,7 +25,7 @@ syn keyword deKeywordsOther nicht zuerst dann zuletzt als erst tja naja ja nein 
 syn match deKeywordsOther "z\.B\.\|d\.h\."
 
 " 'sein' overlaps deEinPronouns
-syn keyword deConjugationsSein bin bist ist sind seid war warst waren wart gewesen wär wäre wärst wärt sei
+syn keyword deConjugationsSein bin bist ist sind seid war warst waren wart gewesen wär wäre wärst wären wärt sei
 syn keyword deConjugationsHaben haben hab habe hast hat habt gehabt hatte hatten hattest hattet hätte hättest hättet hätten
 syn keyword deConjugationsWerden werden werd werde wirst wird werdet geworden wurde wurdest wurdet wurden würde würdest würdet würden
 
@@ -67,7 +67,8 @@ syn match deContractions "'[snm]\>"
 
 syn match deNumbers "\<\(eins\|zwei\|drei\|sechs\|sieben\|\(vier\|fünf\|sech\|sieb\|acht\|neun\)\(zehn\|zig\)\?\|zehn\|elf\|zwölf\|dreizehn\|dreißig\|dreissig\|hundert\|und\|tausend\|million\|milliard\|billion\|billiard\|trillion\)\+\(te[rnsm]\?\)\?\>"
 syn match deNumbers "\<\(ers\|drit\|sech\|sieb\|ach\)te[rnsm]\?\>"
-syn keyword deNumbers null
+syn keyword deNumbers null viertel
+syn match deNumbers "\<halb\(e[rnsm]\?\)\?\>"
 syn match deNumbers "[0-9]\+"
 syn match deNumbers "\<\d\+\( Uhr\)\?\>"
 
