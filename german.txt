@@ -1,9 +1,9 @@
-Dies ist eine Ausprobierung von der sogenannt "Deutsch"-
-Syntaxhervorhebenszug. Ich habe eine Idee von mir selber
+Dies ist eine Ausprobierung von dem sogenannt "Deutsch"-
+Syntaxhervorhebenszug. Ich habe eine Idee aus mir selber
 und es konnte auch für jeden gut sein. Sie ist nicht die
-beste Idee, aber es konnte auch für Leute nutzlich, deren
+beste Idee, aber sie konnte auch für Leute nutzlich, deren
 erste Sprache nicht Deutsch ist. Merke, dass manche Wörter,
-die allgemeine Wörter sind, wurden hervorgehoben und die
-nicht-allgemeine Wörter nicht so. Das ist wirklich cool!
+die allgemeinen Wörter sind, wurden hervorgehoben und die
+nicht-allgemeinen Wörter nicht so. Das ist wirklich cool!
 Ich habe eigentlich viele Programme in meinem miniutils-
 Repository geschrieben.

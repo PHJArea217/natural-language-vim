@@ -1,6 +1,8 @@
 # natural-language-vim
 VIM syntax files for natural language
 
+https://github.com/blueponies666/natural-language-vim
+
 See the 1.png and 2.png files for some screenshots.
 
 You can install the syntax files in ~/.vim/syntax/ and use them as you normally would.
