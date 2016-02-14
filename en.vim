@@ -96,7 +96,7 @@ hi def link enConjugationsToDo Type
 hi def link enConjugationsToWant Type
 hi def link enConjugationsToGo Type
 hi def link enConjugationsToGet Type
-hi def link enCommonWords Type
+hi def link enCommonWords Identifier
 
 hi def link enNumbers Constant
 hi def link enNumbersOrdinal Constant

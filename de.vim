@@ -83,7 +83,7 @@ hi def link deContractions Type
 hi def link deEinPronouns PreProc
 hi def link dePronounsPersonal PreProc
 hi def link dePronounsImpersonal PreProc
-hi def link dePronounsOther PreProc
+hi def link dePronounsOther Identifier
 hi def link deNounsAdjectivesOther PreProc
 hi def link deKeywordsOther Statement
 hi def link deQuestionWords Statement
@@ -103,9 +103,9 @@ hi def link deConjugationsMussen Type
 hi def link deConjugationsDurfen Type
 hi def link deConjugationsMogen Type
 hi def link deConjugationsTun Type
-hi def link deAdverbsOther Type
-hi def link deDaWoCompounds Type
-hi def link deHinHerCompounds Type
+hi def link deAdverbsOther Identifier
+hi def link deDaWoCompounds Identifier
+hi def link deHinHerCompounds Identifier
 
 hi def link deNumbers Constant
 hi def link deDaysOfTheWeek Constant
