@@ -4,11 +4,11 @@
 syntax case ignore
 
 syn keyword dePronounsPersonal ich du er sie es wir ihr mich dich ihn uns euch mir dir ihm ihnen sich selbst selber
-syn match deEinPronouns "\<\([mdsk]\?ein\|ihr\|unse\?r\|eue\?r\)\(e[rsnm]\?\)\?\>"
-syn match dePronounsImpersonal "\<\(irgend\)\?\(jemand\(e[rsnm]\?\)\?\|etwas\|wo\(her\|hin\)\?\|wie\)\>" " etwas, irgendwohin, etc.
+syn match deEinPronouns "\<\([mdsk]\?ein\|ihr\|unse\?r\|eue\?r\)\(e[rnsm]\?\)\?\>"
+syn match dePronounsImpersonal "\<\(irgend\)\?\(jemand\(e[rnsm]\?\)\?\|etwas\|wo\(her\|hin\)\?\|wie\)\>" " etwas, irgendwohin, etc.
 syn match dePronounsImpersonal "\<nirgends\?\(wo\(her\|hin\)\?\)\?\>"
-syn match dePronounsImpersonal "\<niemand\(e[rsnm]\)\?\>"
-syn match dePronounsImpersonal "\<\(all\|je[dn]\|manch\|irgendein\)\(e[rsnm]\?\)\?\>"
+syn match dePronounsImpersonal "\<niemand\(e[rnsm]\)\?\>"
+syn match dePronounsImpersonal "\<\(all\|je[dn]\|manch\|irgendein\)\(e[rnsm]\?\)\?\>"
 syn keyword dePronounsImpersonal nichts man
 syn match dePronounsOther "\<\(der\|die\|das\|den\|dem\|des\)selben\?\>" " derselbe, dasselbe, usw.
 syn match dePronounsOther "\<dies\(e[rnsm]\?\)\?\>" " diese, dieser, diesen, usw.
@@ -17,8 +17,8 @@ syn keyword dePronounsOther her hin allerdings
 syn match dePronounsOther "\<\(ab\|an\|auf\|aus\|bei\|durch\|gegen\|mit\|nach\|neben\|über\|um\|unter\|vor\|zwischen\)\?einander\>"
 
 syn keyword deNounsAdjectivesOther mal anders bisschen paar oben unten
-syn match deNounsAdjectivesOther "\<\(lang\|ander\|nächst\|selb\)\(e[rsnm]\?\)\?\>"
-syn match deNounsAdjectivesOther "\<letzte[rsnm]\?\>"
+syn match deNounsAdjectivesOther "\<\(lang\|ander\|nächst\|selb\)\(e[rnsm]\?\)\?\>"
+syn match deNounsAdjectivesOther "\<letzte[rnsm]\?\>"
 syn match deNounsAdjectivesOther "\<jede[rnm]falls\?\>"
 
 syn keyword deKeywordsOther nicht zuerst dann zuletzt als erst tja naja ja nein also usw bzw ggf je desto etwa
@@ -39,6 +39,7 @@ syn keyword deConjugationsDurfen dürfen darf darfst dürft gedurft durfte durft
 
 syn keyword deConjugationsTun tun tut tust tu tue getan tan tat tast täte tätet täten
 
+" FIXME: Do some of those words have too much 'weight?'
 syn keyword deAdverbsOther mehr meisten immer nie wieder nur noch niemals manchmal nun auch oftmals weiter zuletzt überall jetzt
 syn keyword deAdverbsOther sehr endlich zurück weg gar oft selten schon sonst ansonsten erstmal jedoch eben ebenso beinahe sowieso
 syn keyword deAdverbsOther garnicht garnichts allein eher zwar
@@ -58,16 +59,18 @@ syn keyword dePrepositions ab an am ans auf aufs aus außer außerhalb ausser au
 syn keyword dePrepositions für fürs gegen gegens hinter hinterm hintern in im ins innerhalb mit nach namens neben nebst ohne pro
 syn keyword dePrepositions seit statt trotz über überm übers um ums unter unters von vom vor während weder wegen zu zur zum zwischen
 
+" Directly translated from English. Might require cleanup.
 syn keyword deConjunctionsCoord und oder aber denn dennoch entweder doch so
 syn keyword deConjunctionsSubord anstatt bevor bis dass daß falls gleichwohl hingegen indem inder indessen nachdem ob obgleich obwohl seitdem weil wenn zudem zuder
 syn match deConjunctionsSubord "\<so\(bald\|dass\|daß\|wie\|lange\?\|ndern\|viel\|wohl\|weit\)\>"
 
 syn keyword deDefiniteArticle die das der den dem des dessen deren denen
 
-syn match deContractions "'[snm]\>"
+syn match deContractions "'[mns]\>" " For prepositions
+syn match deContractions "'ne[rmns]\>" " For 'ein'
 
 syn match deNumbers "\<\(ein\|zwei\|drei\|sechs\|sieben\|\(vier\|fünf\|sech\|sieb\|acht\|neun\)\(zehn\|zig\)\?\|zehn\|elf\|zwölf\|dreizehn\|dreißig\|dreissig\|hundert\|und\|tausend\|million\|milliard\|billion\|billiard\|trillion\)\+\(te[rnsm]\?\)\?\(mal\)\?\>"
-syn match deNumbers "\<\(ers\|drit\|sech\|sieb\|ach\)te[rnsm]\?\>"
+syn match deNumbers "\<\(ers\|drit\|sechs\|sieb\|ach\)te[rnsm]\?\>"
 syn keyword deNumbers null eins viertel
 syn match deNumbers "\<halb\(e[rnsm]\?\)\?\>"
 syn match deNumbers "[0-9]\+"

@@ -23,19 +23,21 @@ syn keyword enConjugationsToGet get gets got getting gotta
 
 syn keyword enInterjections please oh eh
 
-syn match enModals "\<\(could\|would\|should\)\(n't\)\?\>"
+syn match enModals "\<\([wc]\|sh\)ould\(n't\)\?\>" " would, could, should
 syn keyword enModals must may can cannot will shall might able unable
 syn match enModals "\<\(can't\|won't\)\>"
 syn keyword enQuestionWords what who whom whose where when which how why
 
-syn keyword enPrepositions about above across after agains along among around as at away before behind below beneath beside besides between beyond by circa despite down during except for from inside into like near of off on onto out outside over per since than through to toward towards under underneath unlike until up upon versus vs vs. via with within without
-
 syn match enPrepositions "\<\(according to\)\>"
 syn match enPrepositions "\<in\( addition\| case\| fact\)\?\>"
+syn keyword enPrepositions about above across after against along among around as at away before behind below
+syn keyword enPrepositions beneath beside besides between beyond by circa despite down during except for from
+syn keyword enPrepositions inside into like near of off on onto out outside over per since than through to
+syn keyword enPrepositions toward towards under underneath unlike until up upon versus vs vs. via with within without
 
 syn keyword enConjunctionsCoord for and neither either but or yet so
 " some overlap with question words/prepositions 
-syn keyword enConjunctionsSubord after although because cause if than til though unless until whenever whether while however meanwhile whereas that otherwise
+syn keyword enConjunctionsSubord after although because cause if than til till though unless whenever whether while however meanwhile whereas that otherwise
 syn keyword enConjunctionsSubord even nextgroup=enPrepositions skipwhite
 syn keyword enConjunctionsSubord even nextgroup=enConjunctionsSubord skipwhite
 syn match enConjunctionsSubordB "\<\(now\|given\|provided\|so\) that\>"
@@ -53,10 +55,12 @@ syn match enContractions "'[vr]e\>"
 syn match enContractions "'[sdtm]\>"
 syn match enContractions "'ll\>"
 
+" FIXME: Is it "fourty" or "forty"?
 syn keyword enNumbers two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen hundred thousand million billion trillion
 syn match enNumbers "\<\(twenty\|thirty\|fourty\|forty\|fifty\|sixty\|seventy\|eighty\|ninety\)\([- ]\(one\|two\|three\|four\|five\|six\|seven\|eight\|nine\)\)\?\>"
 syn match enNumbers "\<[0-9]\+\.\?\>" " Integers
 syn match enNumbers "\<[0-9]*\.[0-9]\+\>" " Decimals
+" FIXME: Disallow combinations like "3th"?
 syn match enNumbersOrdinal "\<[0-9]\+\(st\|nd\|rd\|th\)\>"
 syn keyword enNumbersOrdinal first second third fourth fifth sixth seventh eighth ninth tenth eleventh twelfth thirteenth fourteenth fifteenth sixteenth seventeenth eighteenth nineteenth twentith thirtith fourtith fiftith sixtith seventith eightith ninetith hundredth thousandth millionth billionth trillionth half quarter
 
