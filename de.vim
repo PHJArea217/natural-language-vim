@@ -57,7 +57,7 @@ syn match deHinHerCompounds "\<\(ab\|an\|auf\|aus\|bei\|durch\|gegen\|h\?in\|hie
 syn keyword deHinHerCompounds ran rauf raus rüber rum runter
 syn keyword dePrepositions ab an am ans auf aufs aus außer außerhalb ausser ausserhalb bei beim bezüglich durch durchs entlang entgegen entsprechend
 syn keyword dePrepositions für fürs gegen gegens hinter hinterm hintern in im ins innerhalb mit nach namens neben nebst ohne pro
-syn keyword dePrepositions seit statt trotz über überm übers um ums unter unters von vom vor während weder wegen zu zur zum zwischen
+syn keyword dePrepositions seit statt trotz über überm übers um ums unter unters von vom vor vorm während weder wegen zu zur zum zwischen
 
 " Directly translated from English. Might require cleanup.
 syn keyword deConjunctionsCoord und oder aber denn dennoch entweder doch so
@@ -67,7 +67,7 @@ syn match deConjunctionsSubord "\<so\(bald\|dass\|daß\|wie\|lange\?\|ndern\|vie
 syn keyword deDefiniteArticle die das der den dem des dessen deren denen
 
 syn match deContractions "'[mns]\>" " For prepositions
-syn match deContractions "'ne[rmns]\>" " For 'ein'
+syn match deContractions "'ne[rmns]\?\>" " For 'ein'
 
 syn match deNumbers "\<\(ein\|zwei\|drei\|sechs\|sieben\|\(vier\|fünf\|sech\|sieb\|acht\|neun\)\(zehn\|zig\)\?\|zehn\|elf\|zwölf\|dreizehn\|dreißig\|dreissig\|hundert\|und\|tausend\|million\|milliard\|billion\|billiard\|trillion\)\+\(te[rnsm]\?\)\?\(mal\)\?\>"
 syn match deNumbers "\<\(ers\|drit\|sechs\|sieb\|ach\)te[rnsm]\?\>"
